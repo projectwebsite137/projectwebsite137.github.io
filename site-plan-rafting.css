@@ -59,6 +59,12 @@ header {
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
+
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
@@ -102,6 +108,17 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
 nav  {
   list-style-type: none;
   display: flex;
