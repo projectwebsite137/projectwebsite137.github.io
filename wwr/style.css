@@ -49,7 +49,7 @@ main section img {
     margin: 0 auto;
  }
  
- header{
+header{
    background-color: #2081c3;
    display: grid;
    grid-template-columns: 150px auto;
