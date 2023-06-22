@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.background_1{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(76, 78, 88, 0.7),rgba(4,9,30,0.7)), url(background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------START HEADER------------------------------- */
+nav{
+    display: flex;
+    padding: 0% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 200px;
+}
+
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 40px 40px;
+    position: relative;
+}
+
+.nav_links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #7CFFCB;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+
+/* ----------------------END HEADER------------------------------- */
+/* ---------------------- CONTENT ------------------------------- */
+
+.col2{
+    color: white;
+}
+#about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/* ---------------------- FOOTER ------------------------------- */
+footer{
+    margin-top: auto;
+}
+footer{
+    height: auto;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+footer p{
+    color: white;
+    padding-left: 33%;
+}
+.footer_content{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+.nav_links img{
+    height: 50px;
+    width: 50px;
+}
+.logo_foot img{
+    height: 50px;
+    width: 50px;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #f8f8f6;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+ }
