@@ -18,9 +18,9 @@
                 <a href="index.html"><img src="logo.png" alt="logo"></a>
                 <div class="nav_links">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="">ABOUT ME</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="index.html" target="_blank">HOME</a></li>
+                        <li><a href="aboutme.html">ABOUT ME</a></li>
+                        <li><a href="" target="_blank">CONTACT</a></li>
                     </ul>      
                 </div>
             </nav>
@@ -34,6 +34,39 @@
                     </div>
                     <div class="col2">
                         <h1>About Me</h1>
+                        <p>
+                            <br>
+                            I am Mahonri Jonathan Savedia, a 22 years old highly active individual, passionate in programming and web development. Driven by my curiosity to discover new things, I am strongly determined to reach my goals and provide the best quality of services for clients.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <P>I am a web developer with strong skills in Python and SEO, who is passionate about creating cutting-edge solutions to solve business challenges. I have expertise in developing high-quality websites that are attractive, functional, and optimized for search engines. My goal is to help businesses achieve their goals by delivering innovative web solutions that are tailored to their needs.</P> <br>
+                                <li><span>Python</span><br>OOP programming</li>
+                                <li><span>SE0</span><br>Link Building   <br>Link insertion <br> Email outreaching <br>Guest Posting</li>
+                                <li><span>Web development</span><br>Web Fundamentals</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <P>I have been coding since the age of 17 and have grown to be passionate in programming. I have worked as an SEO for a few years before transitioning to a Junior Developer position, specializing in Python. Throughout my career, I've developed a deep understanding of the latest technologies and built up experience in working with clients from various industries.</P> <br>
+                                <li><span>Python</span><br>4 Years of Experience</li>
+                                <li><span>SE0</span><br>1 Year of Experience</li>
+                                <li><span>Web development</span><br>2 Years of Experience</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <P>I am a recent graduate of the Senior High Informatics Computer Institute. I am currently a student at BYU Idaho majoring in Software Development with a Bachelor of Science degree. With my experience and knowledge in the software development field, I am confident that I can help clients achieve their goals and objectives through creative solutions.</P> <br>
+                                <li><span>BYU-IDAHO</span><br>Currrently Enrolled</li>
+                                <li><span>BYU-Pathway</span><br>1 Full Year of acedemics</li>
+                                <li><span>Informatics Computer Institute</span><br>2 Years of Senior High School</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,14 +78,32 @@
                 <p>Keep your passion of fire.</p>
                 <div class="nav_links">
                     <ul>
-                        <li><a href="facebook.com"><img src="facebook.png" alt="logo"></a></li>
-                        <li><a href="instagram.com"><img src="instagram.png" alt="logo"></a></li>
-                        <li><a href="linkedin.com"><img src="linkedin.png" alt="logo"></a></li>
+                        <li><a href="facebook.com" target="_blank"><img src="facebook.png" alt="logo"></a></li>
+                        <li><a href="instagram.com" target="_blank"><img src="instagram.png" alt="logo"></a></li>
+                        <li><a href="https://www.linkedin.com/in/mahonri-jonathan-savedia-76755b239/" target="_blank"><img src="linkedin.png" alt="logo"></a></li>
                     </ul>      
                 </div>
             </nav>
 
         </footer>
     </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
