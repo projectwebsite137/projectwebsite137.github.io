@@ -54,7 +54,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #7CFFCB;
+    background: #F15025;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -84,6 +84,11 @@ nav img{
     color: white;
     flex-basis: 35%;
     padding-left: 12%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Times New Roman" ;
 }
 
 .social-icons img{
@@ -119,7 +124,7 @@ nav img{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #F15025;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -136,7 +141,7 @@ nav img{
 
 }
 .tab-contents ul li span{
-    color: #ff004f;
+    color: #F15025;
     font-size: 14px;
 }
 .tab-contents{
@@ -167,7 +172,7 @@ nav img{
 .btn{
     margin-top: 30px;
     display: inline-block;
-    background-color: #ff004f;
+    background-color: #F15025;
     color: white;
     border: none;
     padding: 15px 32px;
